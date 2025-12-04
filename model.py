@@ -7,7 +7,7 @@ import joblib
 # random seed
 seed = 42
 
-iris_df = pd.read_csv("iris.csv")
+iris_df = pd.read_csv("Iris.csv")
 iris_df = iris_df.sample(frac=1, random_state=seed)   # shuffle dataset
 
 X = iris_df[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']]
